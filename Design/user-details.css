@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    background-color: #3e98b4;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    padding: 0;
+    animation: slideIn 1s forwards;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.main{
+    background: #F5F5F7;
+    height: 79vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    animation: slideOn 1s forwards;
+}
+.blok{
+    background-color: #3e98b4;
+    border-color: gray;
+    border-radius: 10px;
+    width: 45vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.smole{
+    background-color: white;
+    border-radius: 4px;
+    width: 50%;
+    height: auto;
+}
+.postUser{
+    background-color: #3e98b4;
+    color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    width: 90%;
+    height: auto;
+}
+.container{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #F5F5F7;
+    animation: slideOn 1s forwards;
+
+}
+.blok2{
+    width: 18%;
+    margin-bottom: 10px;
+    background-color: #3e98b4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }}
+@keyframes slideOn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }}
